@@ -1,0 +1,12 @@
+
+<cdk-virtual-scroll-viewport itemSize="70">
+   <!--<li *cdkVirtualFor=" let p of people;" class="slide InRight">
+      <h2> {{p.name}} {{p.bio}}</h2>
+   </li>
+-->
+<li *ngFor="let test of companies ">
+   {{ test.title}}
+ 
+</li>
+  </cdk-virtual-scroll-viewport>
+
