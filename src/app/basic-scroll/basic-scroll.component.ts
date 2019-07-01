@@ -9,6 +9,7 @@ import { CompaniesService } from '../companies.service';
 export class BasicScrollComponent implements OnInit {
 
   companies: any=[];
+  totalCompanies;
   people;
 
   constructor(private companiesService: CompaniesService) {
@@ -23,10 +24,14 @@ export class BasicScrollComponent implements OnInit {
   getCompanies():void {
     this.companiesService.getCompanies().subscribe(companies => this.companies = companies)
   }
+
+  getCountCompanies():void {
+    this.companiesService.getCountCompanies().subscribe(totalCompanies => this.totalCompanies = totalCompanies)
+  }
   
   
   ngOnInit() {
-    this.getCompanies();
+    this.getCountCompanies();
   }
 
 }

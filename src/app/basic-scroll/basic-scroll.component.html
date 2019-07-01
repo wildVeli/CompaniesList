@@ -1,12 +1,17 @@
 
+<h1>Total companies: {{totalCompanies}}</h1>
 <cdk-virtual-scroll-viewport itemSize="70">
-   <!--<li *cdkVirtualFor=" let p of people;" class="slide InRight">
+      
+
+   <li *cdkVirtualFor=" let p of people;" class="slide InRight">
       <h2> {{p.name}} {{p.bio}}</h2>
    </li>
--->
-<li *ngFor="let test of companies ">
-   {{ test.title}}
+
+<!--<li *ngFor="let test of companies ">
+  
  
 </li>
+-->
+
   </cdk-virtual-scroll-viewport>
 
