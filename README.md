@@ -2,6 +2,11 @@
 
 This project is still starting, be aware.
 
+# Dependencies
+If you want to use this in your local you need this packages:
+	-ng add @angular/material (used for the infinite scroll list).
+
+This client calls my REST API CompaniesList, it's in my repository too.
 
 # CompaniesList
 
