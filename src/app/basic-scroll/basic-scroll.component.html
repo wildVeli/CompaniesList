@@ -1,19 +1,24 @@
 
 <h1>Total companies: {{totalCompanies}}</h1>
 
-{{companies | json}}
-<cdk-virtual-scroll-viewport itemSize="70">
+<!--{{companies | json}}-->
+
+<cdk-virtual-scroll-viewport itemSize="80">
       
+<!--
+  <li *cdkVirtualFor=" let person of people;" class="slide InRight">
+   <h2 routerLink="detail/{{person.name}}"> {{person.mame}}</h2>
+   </li>[
+   
 
-  <!--<li *cdkVirtualFor=" let person of people;" class="slide InRight">
-      <h2> {{person.name}}</h2>
-   </li>
--->
-
+ -->
    <li *cdkVirtualFor=" let company of companies;" class="slide InRight">
-         <h2> {{company.mame}}</h2>
-      </li>
-<!--<li *ngFor="let test of companies ">
+         <a routerLink="detail/{{company.codCompany}}"> 
+            <span> {{company.mame}}</span>
+         </a>
+   </li>
+ 
+  <!--   <li *ngFor="let test of companies ">
   
  
 </li>

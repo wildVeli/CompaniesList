@@ -1,0 +1,24 @@
+
+.details{
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    height:  100%;
+    font-size: 200%;
+
+}
+
+.web,.technologies,.direction,.rating{
+    text-align: left;
+    padding: 50px;
+}
+
+.name{
+    text-align: center;
+    font-size: 150%;
+    font-style: oblique;
+}
+
+
+
+/*------------------------------------*/

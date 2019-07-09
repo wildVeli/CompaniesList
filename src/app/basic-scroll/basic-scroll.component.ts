@@ -11,7 +11,7 @@ export class BasicScrollComponent implements OnInit {
 
   companies: any=[];
   totalCompanies;
-  people;
+  people: any=[];
 
   constructor(private companiesService: CompaniesService) {
       this.people = Array(100).fill(1).map(_=> {

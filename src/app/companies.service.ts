@@ -14,13 +14,20 @@ export class CompaniesService {
 constructor(
   private http: HttpClient) { }
 
+  
     /** GET heroes from the server */
   getCompanies () {
+    console.log('getCompanies');
     return this.http.get(this.apiUrl+'entity.companies');
-    console.log("Comes here 2");
+
   }
 
   getCountCompanies(){
     return this.http.get(this.apiUrl+'entity.companies/count');
+  }
+
+  getCompany(id: number){
+    console.log('try getCompany id: '+id);
+    return this.http.get('/CompaniesService2/webresources/entity.companies/'+id);
   }
 }
